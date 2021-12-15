@@ -1,27 +1,149 @@
 ﻿<!DOCTYPE html>
 <html>
-    <title>Infinity - Home</title>
-    <a href="download.html">DOWNLOAD</a>  &nbsp;
-    <a href="privacy.html">PRIVACY</a>
+<title>Infinity - Home</title>
+<div class="section1">
+<style>
+    .section1 {
+        height: 5000px;
+        background-color: rgb(69, 111, 225)
+    }
+</style>
+<script>const [red, green, blue] = [69, 111, 225]
+const section1 = document.querySelector('.section1')
+
+window.addEventListener('scroll', () => {
+  const y = 1 + (window.scrollY || window.pageYOffset) / 150
+  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+  section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+})</script>
+    <style>
+        a:link, a:visited {
+            background-color: #42EBF5;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+<a href="download.html">DOWNLOAD</a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="privacy.html">PRIVACY</a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#C1">Skip to links</a>
+<style>
+    .fade-in-text {
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        color: black;
+        animation: fadeIn linear 1s;
+        -webkit-animation: fadeIn linear 1s;
+        -moz-animation: fadeIn linear 1s;
+        -o-animation: fadeIn linear 1s;
+        -ms-animation: fadeIn linear 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-ms-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+<div class="fade-in-text">
     <p>
         <h1>Project Infinity</h1>
     </p>
-Google, Facebook, Snapchat, Tik Tok, Instagram, Whatsapp, Messenger all keep track of you. Tik Tok has been
-banned in many countries due to spying suspicions. Facebook had a data leak that covered 500 million people.
-Do you use Facebook? If you want to see if your email or account data has been leaked, check <a href="https://haveibeenpwned.com/">here</a> for more info.
-Someone was biking, and a murder happened near him, in someone's house. He was instantly under suspicion that he may have
-murder the innocent person. The reasoning was, he had a Google Maps account on his phone.
-<br>
-Have you ever talked about something, and you got and advertisment for it? Is this a coinidence? No. Phones listen to your microphones to update your advertising ID.
-It's freaky. The Netflix show Black Mirror touches on this topic. Snapchat keeps your snaps, forever. The official twitter handle tweeted this <a href="https://pbs.twimg.com/media/CZlWf-pUAAEBlWZ.jpg">oddly unsetteling message</a> on how they see every single message.
-<br>
-All in all, every single website keeps track of you. If if you dont like that. Your IP (internet protocol) address is so important. Not even can it see your device's specifications, it can see your exact location. That is why you need to be so important if you ever visit a sketchy site.
-<p>
+    <style>
+        h1 {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
 
-    <h1>One tip. Always use a VPN.</h1>
-    VPN's stop these trackers by emulating a virtual location.
+        body {
+            background-image: url("bg");
+        }
+    </style>
+    Google, Facebook, Snapchat, Tik Tok, Instagram, Whatsapp, Messenger all keep track of you. Tik Tok has been
+    banned in many countries due to spying suspicions. Facebook had a data leak that covered 500 million people.
+    Do you use Facebook? If you want to see if your email or account data has been leaked, check havibeenpwned.com for more info.
+    Someone was biking, and a robbing happened near him, in someone's house. He was instantly under suspicion that he may have
+    robbed the innocent person. The reasoning was, he had a Google Maps account on his phone.
+    <br>
+    Have you ever talked about something, and you got and advertisment for it? Is this a coinidence? No. Phones listen to your microphones to update your advertising ID.
+    It's freaky. The Netflix show Black Mirror touches on this topic. Snapchat keeps your snaps, forever. The official twitter handle tweeted on how they see every single message.
+    Also, Snapchat tweeted out that they can and <b>will</b> keep your direct messages.
+    <br>
+    All in all, every single website keeps track of you. If if you dont like that. Your IP (internet protocol) address is so important. Not even can it see your device's specifications,
+    it can see your exact location. That is why you need to be so important if you ever visit a sketchy site.
+        <h1>One tip. Always use a VPN.</h1>
+          <p style="color:white;"> VPN's stop these trackers by emulating a virtual location.
+            I setup an Android build meant for for this purpose. It's not fully finished, but it works on computers!
+    <p>
+        <h1>Android</h1>
+   <p style="color:white;"> The way I made it was because AOSP (Android Open Source Project) didn't work, so I had to improvise! The way I did it was setting up a VMWare machine, and extracting the Android files. Then I proceded to edit the
+    files carefully so it would have no bloatware or Google, you can install Google services using the <del>unoptimized and buggy</del> reliable and totally not in development appstore!</p>
+    <br />
+    <br />
+   <p style="color:white;"> The  Android build is called Project Infinity, as it symolized that you can do anything with it! It's fairly buggy right now, as it's just been released. Support might not be the best in the world, as it runs on Oreo (8.1). </p>
+
+<p>
+    <p>
+        <p>
+            <p>
+            <h1 id="C2">Links</h1>
+            <a  href="https://www.haveibeenpwned.com">haveibeenpwned</a>
+                <a href="https://www.nbcnews.com/news/us-news/google-tracked-his-bike-ride-past-burglarized-home-made-him-n1151761">Google Maps Incident</a>
+            <a href="https://pbs.twimg.com/media/CZlWf-pUAAEBlWZ.jpg">1st Snapchat Tweet</a>
+            <a href="https://www.snopes.com/tachyon/2019/09/snapchat_legal.jpg">2nd Snapchat tweet</a>
+
 </p>
-<br>
-I setup an Android build meant for for this purpose. It's not fully finished, but it works on computers!
-</body>
+        </div>
+    </div>
+<canvas></canvas>
+    </body>
 </html>      
